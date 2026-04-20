@@ -4,15 +4,20 @@
 **Date:** 17 April 2026  
 **Prepared by:** Hajira Hajistha  
 
-## Summary
-Performed a read-only security assessment. Found missing security headers (Medium risk) and server version disclosure (Low risk). No critical issues.
+## Scope
+- Read-only, passive analysis
+- No exploitation or intrusive testing
+- Public-facing pages only
 
-## Tools used
-- Nmap
-- OWASP ZAP (passive scan)
-- Browser DevTools
+## Tools Used
+- Nmap (port scanning)
+- OWASP ZAP (passive vulnerability scanning)
+- Browser DevTools (header inspection)
 - Canva (report design)
 
-## Files included
-- `FUTURE_CS_01` - Final report
-- Screenshots as evidence
+## Summary
+Found missing security headers (X-Frame-Options, X-Content-Type-Options, HSTS) and server version disclosure. No critical issues.
+
+## Files Included
+- `FUTURE_CS_01.pdf` – Final report
+- Screenshots of Nmap, headers, and ZAP alerts
